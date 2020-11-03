@@ -1,0 +1,25 @@
+.quiz {
+    border: 1px solid black;
+    height: 400px;
+    width: 700px;
+}
+
+#one {
+    background-color:aqua;
+}
+
+#two {
+    background-color:aquamarine;
+}
+
+#three {
+    background-color:beige;
+}
+
+#four {
+    background-color:coral;
+}
+
+.display_none {
+    display:none;
+}
