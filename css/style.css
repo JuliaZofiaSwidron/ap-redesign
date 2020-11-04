@@ -1,0 +1,21 @@
+/*Navigation and Header*/
+
+#lang {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 0.8rem;
+}
+
+nav {
+    display:flex;
+}
+
+nav > ul {
+      display: flex;
+    vertical-align: middle;
+
+    list-style-type: none;
+}
+
+nav > .menu
