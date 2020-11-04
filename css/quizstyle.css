@@ -1,25 +1,29 @@
 .quiz {
     border: 1px solid black;
-    height: 400px;
-    width: 700px;
+    width: 90%;
+    height: auto;
 }
 
 #one {
-    background-color:red;
+    background-color: red;
 }
 
 #two {
-    background-color:aquamarine;
+    background-color: aquamarine;
 }
 
 #three {
-    background-color:beige;
+    background-color: beige;
 }
 
 #four {
-    background-color:coral;
+    background-color: coral;
+}
+
+#five {
+    background-color:blueviolet;
 }
 
 .display_none {
-    display:none;
+    display: none;
 }
