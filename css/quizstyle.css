@@ -1,7 +1,7 @@
 .quiz {
-    border: 1px solid black;
     width: 90%;
     height: auto;
+<<<<<<< HEAD
 }
 
 #one {
@@ -26,6 +26,9 @@
 
 #five {
     background-color:blueviolet;
+=======
+    margin:auto;
+>>>>>>> merge css
 }
 
 .display_none {
