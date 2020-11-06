@@ -1,0 +1,247 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --bg-color:white;
+    --orange-color: #FF9631;
+    --darkblue-color: #40607E;
+    --light-gray: #C7D1D9;
+    --dark-text:black;
+
+    --primary-font: 'Aleo', serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --main-text-color: #40607E;
+    --details-color: #007777;
+
+    --white-space: 1rem;
+  }
+  html {
+    font-size: 100%;
+    font-family: var(--primary-font);
+    font-weight: 100;
+  }
+
+  /* Button styling*/
+  button {
+    transition: all 3s;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    background: var(--darkblue-color);
+    text-align: center;
+    text-decoration: none;
+    font: 100 1.25em/1 var(--primary-font);
+    letter-spacing: 1px;
+    color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+    border: none;
+  }
+  .secondary-button {
+    background: var(--light-gray);
+    color: var(--darkblue-color);
+    font-family: var(--secondary-font);
+    border-radius: 1rem;
+  }
+  button:hover {
+    background-color: var(--orange-color);
+  }
+
+  button:active {
+    background-color: var(--darkblue-color);
+  }
+.secondary-button:visited{
+    background-color: var(--orange-color);
+    color: var(--light-gray)
+}
+  .secondary-button:hover {
+    background-color: var(--darkblue-color);
+    color: var(--bg-color)}
+
+
+/*Links styling*/
+  a {
+    transition: all 0.2s;
+    font-weight: 100;
+    text-decoration: underline;
+    font-family: var(--primary-font);
+    color: var(--darkblue-color);
+  }
+
+  a:hover {
+    color: var(--orange-color);
+    font-weight: 100;
+  }
+
+
+
+
+  /*Color swatches*/
+  .swatches li {
+    margin-right: 5vw;
+    height: 15vw;
+    width: 20%;
+    list-style: none;
+  }
+
+  ul li:last-child {
+    margin-right: 0;
+  }
+
+  .color-swatch-1 {
+    background-color: var(--light-gray);
+  }
+
+  .color-swatch-2 {
+    background-color: var(--orange-color);
+  }
+
+  .color-swatch-3 {
+    background-color: var(--darkblue-color);
+  }
+
+  .color-swatch-4 {
+    background-color: var(--dark-text);
+  }
+
+  .color-swatch-5 {
+    background-color: var(--color-5);
+  }
+
+  .typography-main {
+    color: var(--details-color);
+  }
+
+  /*Tekst styling*/
+ h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--darkblue-color);
+  }
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    color: var(--darkblue-color);
+    font-weight: 100;
+  }
+
+  p {
+    font-family: var(--secondary-font);
+    line-height: 1;
+    font-size: 1rem;
+    color: var(--darkblue-color);
+  }
+
+  strong {
+    font-weight: 600;
+
+  }
+
+  em {
+    font-style: italic;
+  }
+
+
+  /*Styletile styling*/
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header,
+  main,
+  footer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: calc(2 * var(--white-space));
+  }
+
+  .full-width {
+    background: var(--darkblue-color);
+    color: var(--bg-color);
+    width: 100%;
+  }
+
+  .header-wrapper h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-right: 0.75em;
+    font-weight: bold;
+    color: var(--bg-color);
+  }
+
+  .header-wrapper h2 {
+    font-size: 1.6em;
+    color: var(--bg-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: var(--white-space) 0;
+    color: var(--bg-color);
+  }
+
+  main {
+    padding: calc(2 * var(--white-space));
+  }
+
+  section {
+    margin-bottom: calc(4 * var(--white-space));
+  }
+
+  .section-heading {
+    font-size: 1.3rem;
+    color:var(--light-gray);
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p[class*="font-details-"] {
+    margin-top: 0.5rem;
+    margin-bottom: calc(2 * var(--white-space));
+    font-size: 0.75rem;
+    font-family: var(--secondary-font);
+    color: #6f6f6f;
+  }
+
+  .adjectives ul {
+    font-size: 1.5rem;
+    opacity: 0.5;
+  }
+
+  .adjectives ul {
+    flex-direction: column;
+  }
+
+  footer {
+    font-style: italic;
+    color: var(--bg-color)
+  }
+
+  @media (min-width: 800px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 4rem;
+    }
+
+    .swatches li {
+      margin-right: 3%;
+      height: 10vw;
+      width: 20%;
+    }
+
+    .textures li {
+      height: 15vw;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .adjectives ul {
+      flex-direction: row;
+    }
+  }
