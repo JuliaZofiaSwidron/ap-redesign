@@ -1,21 +1,27 @@
 /*Navigation and Header*/
 
-#lang {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    font-size: 0.8rem;
+#topright {
+    display: flex;
+justify-content: flex-end;
 }
 
 nav {
-    display:flex;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
 nav > ul {
-      display: flex;
-    vertical-align: middle;
-
+    display: flex;
     list-style-type: none;
+    justify-content: flex-start;
 }
 
-nav > .menu
+nav > ul > li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+nav > img {
+    justify-content: flex-end;
+}
