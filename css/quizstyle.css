@@ -1,27 +1,7 @@
 .quiz {
-    border: 1px solid black;
     width: 90%;
     height: auto;
-}
-
-#one {
-    background-color: red;
-}
-
-#two {
-    background-color: aquamarine;
-}
-
-#three {
-    background-color: beige;
-}
-
-#four {
-    background-color: coral;
-}
-
-#five {
-    background-color:blueviolet;
+    margin:auto;
 }
 
 .display_none {
