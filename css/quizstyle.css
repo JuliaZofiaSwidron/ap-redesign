@@ -7,3 +7,10 @@
 .display_none {
     display: none;
 }
+
+
+.grey_bar {
+    background-image: src('img/grey.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
