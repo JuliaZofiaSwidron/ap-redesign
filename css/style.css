@@ -18,17 +18,13 @@ nav > ul {
     display: flex;
     list-style-type: none;
     justify-content: flex-start;
+    align-items: baseline;
 }
 
 nav > ul > li {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
-nav > img {
-    justify-content: flex-end;
-}
-
 
 /*CSS from Julia*/
 
