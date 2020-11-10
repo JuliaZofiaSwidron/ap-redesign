@@ -187,6 +187,13 @@ h2 {
     color: var(--darkblue-color);
   }
 
+.plan > ul {
+    font-family: var(--primary-font);
+    line-height: 2;
+    font-size: 1rem;
+    color: var(--darkblue-color);
+  }
+
   strong {
     font-weight: 600;
 
