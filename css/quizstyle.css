@@ -1,3 +1,7 @@
+#loading {
+    position: relative;
+}
+
 .quiz {
     width: 90%;
     height: auto;
@@ -13,19 +17,18 @@
 }
 
 .solution {
-     width: 90%;
+    width: 90%;
     height: auto;
     margin: auto;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 2rem;
-    text-align:center;
+    text-align: center;
     grid-template-areas:
         ". h1 h1"
         ". h2 h2"
         "image left right"
-        "image . buttons"
+        "image . learnmore"
 }
 
 h1 {
@@ -47,9 +50,9 @@ p {
     height: 100px;
     width: 100px;
     line-height: 100px;
-    text-align:center;
+    text-align: center;
     vertical-align: middle;
-    justify-self:end;
+    justify-self: end;
     margin-right: 3rem;
 }
 
@@ -65,10 +68,12 @@ p {
 .buttons {
     grid-area: buttons;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    padding-top: 3rem;
 }
 
-.back, .next {
+.back,
+.next {
     display: inline-block;
 }
 
@@ -81,17 +86,43 @@ p {
 }
 
 .grey_bar {
-    background-image: src('img/grey.svg');
+    background-image: url(img/grey.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    height: 15px;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+.orange_bar {
+    background-image: url(img/new_orange.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 15px;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 25px;
+    left: 10px;
 }
 
 #right {
     grid-area: right;
+    max-width: 30vw;
 }
 
 #left {
     grid-area: left;
+    max-width: 30vw;
+}
+
+.learnmore {
+    grid-area: learnmore;
+    padding-top: 4rem;
+    text-align: end;
 }
 
 .plan {
@@ -103,7 +134,7 @@ p {
 
 .plan > .plans {
     display: block;
-    list-style-type:circle;
+    list-style-type: circle;
 }
 
 .blue {
