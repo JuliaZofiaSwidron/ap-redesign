@@ -9,8 +9,9 @@ justify-content: flex-end;
 
 nav {
     padding: 1rem;
+    padding-right: 2rem;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -24,6 +25,19 @@ nav > ul {
 nav > ul > li {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.menu {
+    flex: 3;
+    align-items: baseline;
+}
+
+.icons {
+    flex: 1;
+}
+
+#navlogo {
+    flex: 1;
 }
 
 /*CSS from Julia*/
@@ -106,8 +120,15 @@ nav > ul > li {
     font-weight: 100;
   }
 
+nav > ul > li > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 
-
+nav > ul > li > a:hover {
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
 
   /*Color swatches*/
   .swatches li {
@@ -159,7 +180,7 @@ h2 {
     font-weight: 100;
   }
 
-  p {
+  p, nav > a {
     font-family: var(--secondary-font);
     line-height: 1;
     font-size: 1rem;
