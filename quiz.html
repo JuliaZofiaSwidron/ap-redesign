@@ -19,13 +19,13 @@
             <li>About AP</li>
         </ul>
 
-        <ul class="menu">
-            <li>Icon</li>
-            <li>Icon</li>
-            <li>Icon</li>
+        <ul class="icons">
+            <li><img src="css/img/search_icon.svg"></li>
+            <li><img src="css/img/mail_icon.svg"></li>
+            <li><img src="css/img/user_icon.svg"></li>
         </ul>
 
-        <img src="https://akademikerpension.dk/assets/header/AkademikerPension_Logo_Black.svg">
+        <img src="css/img/logo.svg">
     </nav>
 
     <div id="loading">
@@ -41,28 +41,28 @@
         </p>
 
         <div class="image"><img src="css/img/people.svg"></div>
-
+        <div class="number"><span class="number_span">1</span></div>
         <div class="questions">
-
-            <div class="number">1</div>
             <h1>What is your marital status?</h1>
             <table>
                 <tr>
-                    <td><button>Married</button></td>
-                    <td><button>Single</button></td>
+                    <td><button class="secondary-button">Married</button></td>
+                    <td><button class="secondary-button">Single</button></td>
                 </tr>
                 <tr>
-                    <td><button>Engaged</button></td>
-                    <td><button>Widowed</button></td>
+                    <td><button class="secondary-button">Engaged</button></td>
+                    <td><button class="secondary-button">Widowed</button></td>
                 </tr>
                 <tr>
-                    <td><button>In a relationship</button></td>
+                    <td><button class="secondary-button">In a relationship</button></td>
                 </tr>
 
             </table>
         </div>
-        <button class="back">Back</button>
-        <button class="next">Next</button>
+        <div class="buttons">
+            <button class="back">Back</button>
+            <button class="next">Next</button>
+        </div>
     </div>
     <div class="quiz" id="two">
 
@@ -74,28 +74,30 @@
 
         <div class="image"></div>
 
+        <div class="number"><span class="number_span">2</span></div>
+
         <div class="questions">
 
-            <div class="number">2</div>
             <h1>Do you have kids?</h1>
             <table>
                 <tr>
-                    <td><button>No</button></td>
-                    <td><button>Expecting</button></td>
+                    <td><button class="secondary-button">Married</button></td>
+                    <td><button class="secondary-button">Single</button></td>
                 </tr>
                 <tr>
-                    <td><button>1-2</button></td>
-                    <td><button>2-3</button></td>
+                    <td><button class="secondary-button">Engaged</button></td>
+                    <td><button class="secondary-button">Widowed</button></td>
                 </tr>
                 <tr>
-                    <td><button>3 or more</button></td>
+                    <td><button class="secondary-button">In a relationship</button></td>
                 </tr>
 
             </table>
         </div>
-        <button class="back">Back</button>
-        <button class="next">Next</button>
-
+        <div class="buttons">
+            <button class="back">Back</button>
+            <button class="next">Next</button>
+        </div>
     </div>
     <div class="quiz" id="three">
 
@@ -107,28 +109,29 @@
 
         <div class="image"></div>
 
-        <div class="questions">
+        <div class="number"><span class="number_span">3</span></div>
 
-            <div class="number">3</div>
+        <div class="questions">
             <h1>Do you own any of the following?</h1>
             <table>
                 <tr>
-                    <td><button>Stocks</button></td>
-                    <td><button>Property</button></td>
+                    <td><button class="secondary-button">Married</button></td>
+                    <td><button class="secondary-button">Single</button></td>
                 </tr>
                 <tr>
-                    <td><button>Vehicles</button></td>
-                    <td><button>Shares</button></td>
+                    <td><button class="secondary-button">Engaged</button></td>
+                    <td><button class="secondary-button">Widowed</button></td>
                 </tr>
                 <tr>
-                    <td><button>Cryptocurrencies</button></td>
+                    <td><button class="secondary-button">In a relationship</button></td>
                 </tr>
 
             </table>
         </div>
-        <button class="back">Back</button>
-        <button class="next">Next</button>
-
+        <div class="buttons">
+            <button class="back">Back</button>
+            <button class="next">Next</button>
+        </div>
     </div>
     <div class="quiz" id="four">
 
@@ -139,24 +142,23 @@
         </p>
 
         <div class="image"></div>
-
+        <div class="number"><span class="number_span">3</span></div>
         <div class="questions">
-
-            <div class="number">4</div>
             <h1>At what age would you like to enter your pension time?</h1>
             <div class="slider"></div>
         </div>
-        <button class="back">Back</button>
-        <button class="next">Next!</button>
-
+        <div class="buttons">
+            <button class="back">Back</button>
+            <button class="next">Next</button>
+        </div>
     </div>
-    <div class="quiz" id="five">
+    <div class="solution" id="five">
         <h1>Thank you!</h1>
         <h2>We recommend one of these plans</h2>
 
         <div class="plan" id="left">
             <h3>Pension plan 1</h3>
-            <ul>
+            <ul class="plans">
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
@@ -167,15 +169,19 @@
         </div>
 
         <div class="plan" id="right">
-            <ul>
+            <h3>Pension plan 1</h3>
+            <ul class="plans">
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
             </ul>
+            <button class="blue">I want this!</button>
         </div>
-        <button class="blue">I want this!</button>
+        <div class="buttons">
+            <a href="">I still have some questions...</a>
+        </div>
     </div>
 
     <script src="js/quizscript.js"></script>

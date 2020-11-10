@@ -1,16 +1,105 @@
 .quiz {
     width: 90%;
     height: auto;
-    margin:auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "h1 h1 h1"
+        "p number questions"
+        "image image questions"
+        "image image buttons";
+}
+
+.solution {
+     width: 90%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". h1 h1"
+        ". h2 h2"
+        "image left right"
+        "image . buttons"
+}
+
+h1 {
+    grid-area: h1;
+}
+
+h2 {
+    grid-area: h2;
+}
+
+p {
+    grid-area: p;
+}
+
+.number {
+    grid-area: number;
+    background-color: #40607E;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align:center;
+    vertical-align: middle;
+    justify-self:end;
+    margin-right: 3rem;
+}
+
+.number_span {
+    color: white;
+    font-size: 2rem;
+}
+
+.questions {
+    grid-area: questions;
+}
+
+.buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content:space-between;
+}
+
+.back, .next {
+    display: inline-block;
+}
+
+.image {
+    grid-area: image;
 }
 
 .display_none {
     display: none;
 }
 
-
 .grey_bar {
     background-image: src('img/grey.svg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#right {
+    grid-area: right;
+}
+
+#left {
+    grid-area: left;
+}
+
+.plan {
+    background-color: #ECEFF2;
+    border-radius: 17px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.plan > .plans {
+    display: block;
+    list-style-type:circle;
 }
