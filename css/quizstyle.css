@@ -19,6 +19,8 @@
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: auto;
+    grid-column-gap: 2rem;
+    text-align:center;
     grid-template-areas:
         ". h1 h1"
         ". h2 h2"
@@ -102,4 +104,9 @@ p {
 .plan > .plans {
     display: block;
     list-style-type:circle;
+}
+
+.blue {
+    position: relative;
+    bottom: -3.5rem;
 }
