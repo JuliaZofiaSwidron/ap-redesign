@@ -12,7 +12,6 @@ function loadQuiz() {
     document.querySelector("#four").classList.add("display_none");
     document.querySelector("#four").addEventListener("click", questionFour);
     document.querySelector("#five").classList.add("display_none");
-
 }
 
 function questionOne() {
@@ -40,5 +39,5 @@ function questionFour() {
     this.classList.add("display_none");
     document.querySelector("#five").classList.remove("display_none");
 
-    document.querySelector(".loading").classList.add("display_none");
+    document.querySelector("#loading").classList.add("display_none");
 }

@@ -1,9 +1,9 @@
 .quiz {
-     position: relative;
+    position: relative;
     top: 5vh;
     width: 90%;
     height: auto;
-    margin:auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -149,7 +149,7 @@ p {
     background-image: url(img/new_orange.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:left;
+    background-position: left;
     height: 15px;
     width: 80%;
     position: absolute;
@@ -160,22 +160,22 @@ p {
 /*LOADING BAR TRANSFORM*/
 
 .transform20 {
-    transform:scaleX(0.2);
-    transform-origin:left;
+    transform: scaleX(0.2);
+    transform-origin: left;
     transition: 0.3s ease;
 }
 
 .transform40 {
-    transform:scaleX(0.4);
-        transition: 0.3s ease;
+    transform: scaleX(0.4);
+    transition: 0.3s ease;
 }
 
-.transoform60 {
-    transform:scaleX(0.6);
-        transition: 0.3s ease;
+.transform60 {
+    transform: scaleX(0.6);
+    transition: 0.3s ease;
 }
 
 .transform80 {
-    transform:scaleX(0.8);
-        transition: 0.3s ease;
+    transform: scaleX(0.8);
+    transition: 0.3s ease;
 }
