@@ -3,16 +3,11 @@
     top: 5vh;
     width: 90%;
     height: auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 #one {
-<<<<<<< HEAD
     background-color:aqua;
-=======
     background-color: red;
->>>>>>> lol
 }
 
 #two {
@@ -29,10 +24,7 @@
 
 #five {
     background-color:blueviolet;
-=======
     margin:auto;
->>>>>>> merge css
-=======
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -107,7 +99,6 @@ p {
 
 .image {
     grid-area: image;
->>>>>>> structure for quiz
 }
 
 .display_none {

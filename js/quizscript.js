@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 window.addEventListener("load", loadQuiz);
 
 function loadQuiz() {
@@ -35,4 +34,3 @@ function questionFour() {
     this.classList.add("display_none");
     document.querySelector("#five").classList.remove("display_none");
 }
->>>>>>> lol
