@@ -18,19 +18,27 @@ function loadQuiz() {
 function questionOne() {
     document.querySelector("#one").classList.add("display_none");
     document.querySelector("#two").classList.remove("display_none");
+
+    document.querySelector(".orange_bar").classList.add("transform40");
 }
 
 function questionTwo() {
     this.classList.add("display_none");
     document.querySelector("#three").classList.remove("display_none");
+
+    document.querySelector(".orange_bar").classList.add("transform60");
 }
 
 function questionThree() {
     this.classList.add("display_none");
     document.querySelector("#four").classList.remove("display_none");
+
+    document.querySelector(".orange_bar").classList.add("transform80");
 }
 
 function questionFour() {
     this.classList.add("display_none");
     document.querySelector("#five").classList.remove("display_none");
+
+    document.querySelector(".loading").classList.add("display_none");
 }

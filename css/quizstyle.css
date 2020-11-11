@@ -129,8 +129,8 @@ p {
 #loading {
     position: relative;
     top: 2vh;
-    margin: auto;
     left: 5vh;
+    padding-bottom: 3vh;
 }
 
 .grey_bar {
@@ -161,6 +161,7 @@ p {
 
 .transform20 {
     transform:scaleX(0.2);
+    transform-origin:left;
     transition: 0.3s ease;
 }
 
