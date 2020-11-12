@@ -71,3 +71,41 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
+
+//Fill fields
+
+fetchQuestions();
+
+function fetchQuestions() {
+console.log("fetchQuestion");
+    fetch("https://agataswistak.com/wordpress/wp-json/wp/v2/ap-quiz")
+        .then(function (response) {
+            console.log(response)
+            return response.json();
+        })
+
+        .then(function (data) {
+            console.log("data")
+            dataReceived(data);
+        })
+}
+
+function dataReceived(question) {
+    question.forEach(showQuestion);
+    console.log("data received")
+}
+
+function showQuestion(myQuestion) {
+    console.log("myQuestion")
+
+    const temp = document.querySelector("#templateID");
+
+    temp.querySelector("h1").textContent = myQuestion.quiz_title;
+    temp.querySelector("p").textContent = myQuestion.blurb;
+    temp.querySelector("#specificQuestion").textContent = myQuestion.question;
+    temp.querySelector("#answer1").textContent = myQuestion.answers;
+
+
+    const parentElem = document.querySelector("body");
+    parentElem.appendChild(temp);
+}

@@ -34,27 +34,24 @@
     </div>
 
     <div class="quiz" id="one">
-
-        <h1>Let's start...</h1>
-
-        <p>To create the best personal plan for you, we first need some important information about you. This will only take a few minutes. The more specific you fill out this form, the more suitable plan we will have for you.
-        </p>
-
+<div id="templateID">
+        <h1></h1>
+        <p></p>
         <div class="image"><img src="css/img/people.svg"></div>
         <div class="number"><span class="number_span">1</span></div>
         <div class="questions">
-            <h1>What is your marital status?</h1>
-            <table>
+            <h1 id="specificQuestion"></h1>
+         <table>
                 <tr>
-                    <td><button class="secondary-button">Married</button></td>
-                    <td><button class="secondary-button">Single</button></td>
+                    <td><button class="secondary-button" id="answer1"></button></td>
+                    <td><button class="secondary-button" id="answer2">Single</button></td>
                 </tr>
                 <tr>
-                    <td><button class="secondary-button">Engaged</button></td>
-                    <td><button class="secondary-button">Widowed</button></td>
+                    <td><button class="secondary-button" id="answer3">Engaged</button></td>
+                    <td><button class="secondary-button" id="answer4">Widowed</button></td>
                 </tr>
                 <tr>
-                    <td><button class="secondary-button">In a relationship</button></td>
+                    <td><button class="secondary-button" id="answer5">In a relationship</button></td>
                 </tr>
 
             </table>
@@ -63,6 +60,7 @@
             <button class="next" id="next1">Next</button>
         </div>
     </div>
+        </div>
     <div class="quiz" id="two">
 
 
@@ -77,18 +75,18 @@
 
         <div class="questions">
 
-            <h1>Do you have kids?</h1>
+            <h1 id="specificQuestion">Do you have kids?</h1>
             <table>
                 <tr>
-                    <td><button class="secondary-button">Married</button></td>
-                    <td><button class="secondary-button">Single</button></td>
+                    <td><button class="secondary-button" id="answer1">Married</button></td>
+                    <td><button class="secondary-button" id="answer2">Single</button></td>
                 </tr>
                 <tr>
-                    <td><button class="secondary-button">Engaged</button></td>
-                    <td><button class="secondary-button">Widowed</button></td>
+                    <td><button class="secondary-button" id="answer3">Engaged</button></td>
+                    <td><button class="secondary-button" id="answer4">Widowed</button></td>
                 </tr>
                 <tr>
-                    <td><button class="secondary-button">In a relationship</button></td>
+                    <td><button class="secondary-button" id="answer5">In a relationship</button></td>
                 </tr>
 
             </table>
@@ -111,18 +109,18 @@
         <div class="number"><span class="number_span">3</span></div>
 
         <div class="questions">
-            <h1>Do you own any of the following?</h1>
-            <table>
+            <h1 id="specificQuestion">Do you own any of the following?</h1>
+           <table>
                 <tr>
-                    <td><button class="secondary-button">Married</button></td>
-                    <td><button class="secondary-button">Single</button></td>
+                    <td><button class="secondary-button" id="answer1">Married</button></td>
+                    <td><button class="secondary-button" id="answer2">Single</button></td>
                 </tr>
                 <tr>
-                    <td><button class="secondary-button">Engaged</button></td>
-                    <td><button class="secondary-button">Widowed</button></td>
+                    <td><button class="secondary-button" id="answer3">Engaged</button></td>
+                    <td><button class="secondary-button" id="answer4">Widowed</button></td>
                 </tr>
                 <tr>
-                    <td><button class="secondary-button">In a relationship</button></td>
+                    <td><button class="secondary-button" id="answer5">In a relationship</button></td>
                 </tr>
 
             </table>
@@ -143,7 +141,7 @@
         <div class="image"></div>
         <div class="number"><span class="number_span">4</span></div>
         <div class="questions">
-            <h1>At what age would you like to enter your pension time?</h1>
+            <h1 id="specificQuestion">At what age would you like to enter your pension time?</h1>
             <div class="slidecontainer">
                 <input type="range" min="50" max="80" value="50" class="slider" id="myRange">
                 <p>I would like to retire at <span id="demo">50</span> years young.</p>
