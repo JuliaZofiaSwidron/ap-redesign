@@ -92,8 +92,9 @@ console.log("fetchQuestion");
 
 function dataReceived(question) {
     question.forEach(showQuestion);
-    console.log("data received")
+    console.log("data received");
 }
+
 
 function showQuestion(myQuestion) {
     console.log("myQuestion")
@@ -105,7 +106,6 @@ function showQuestion(myQuestion) {
     temp.querySelector("#specificQuestion").textContent = myQuestion.question;
     temp.querySelector("#answer1").textContent = myQuestion.answers;
 
-
-    const parentElem = document.querySelector("body");
+    const parentElem = document.querySelector("#template_place");
     parentElem.appendChild(temp);
 }
