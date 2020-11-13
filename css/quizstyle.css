@@ -55,6 +55,7 @@ p {
 
 .image {
     grid-area: image;
+    padding-right: 1rem;
 }
 
 
