@@ -1,4 +1,5 @@
-#templateID, #templateID_slider {
+#templateID,
+#templateID_slider {
     position: relative;
     top: 5vh;
     width: 90%;
@@ -14,7 +15,9 @@
         "image image .";
 }
 
-
+.quiz {
+    position:relative;
+}
 
 .solution {
     position: relative;
@@ -80,6 +83,10 @@ p {
     border-radius: 17px;
     padding: 1rem;
     text-align: center;
+    position:relative;
+    display: flex;
+    flex-flow:column;
+    justify-content: space-between;
 }
 
 .plan > .plans {
@@ -88,8 +95,7 @@ p {
 }
 
 .blue {
-    position: relative;
-    bottom: -3.5rem;
+margin:0;
 }
 
 
@@ -112,8 +118,9 @@ p {
 }
 
 .buttons {
-    position:absolute;
-    right: 2vw;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
     display: flex;
     justify-content: flex-end;
     z-index: 10;
@@ -188,7 +195,7 @@ p {
 /*Various Styling*/
 
 .secondary-button:focus {
-    background-color:#FF9631;
+    background-color: #FF9631;
     color: white;
 }
 
@@ -199,33 +206,32 @@ p {
 /*Slider*/
 
 .slidecontainer {
-  width: 100%;
+    width: 100%;
 }
 
 .slider {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 15px;
-  background: #C7D1D9;
-  outline: none;
-  opacity: 1;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #C7D1D9;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
     border-radius: 15px;
 }
 
 .slider:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #FF9631;
-    border-radius:50%;
-  cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #FF9631;
+    border-radius: 50%;
+    cursor: pointer;
 }
-
