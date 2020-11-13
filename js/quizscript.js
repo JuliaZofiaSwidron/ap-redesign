@@ -68,8 +68,8 @@ var output = document.getElementById("demo");
 output.innerHTML = slider.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
+slider.oninput = function () {
+    output.innerHTML = this.value;
 }
 
 //Fill fields
@@ -77,7 +77,7 @@ slider.oninput = function() {
 fetchQuestions();
 
 function fetchQuestions() {
-console.log("fetchQuestion");
+    console.log("fetchQuestion");
     fetch("https://agataswistak.com/wordpress/wp-json/wp/v2/ap-quiz")
         .then(function (response) {
             console.log(response)
@@ -100,12 +100,18 @@ function showQuestion(myQuestion) {
     console.log("myQuestion")
 
     const temp = document.querySelector("#templateID");
+    const myCopy = temp.cloneNode(true);
 
-    temp.querySelector("h1").textContent = myQuestion.quiz_title;
-    temp.querySelector("p").textContent = myQuestion.blurb;
-    temp.querySelector("#specificQuestion").textContent = myQuestion.question;
-    temp.querySelector("#answer1").textContent = myQuestion.answers;
+    myCopy.querySelector(".number_span").textContent = myQuestion.number;
+    myCopy.querySelector("h1").textContent = myQuestion.quiz_title;
+    myCopy.querySelector("p").textContent = myQuestion.blurb;
+    myCopy.querySelector("#specificQuestion").textContent = myQuestion.question;
+    myCopy.querySelector("#answer1").textContent = myQuestion.answers;
 
-    const parentElem = document.querySelector("#template_place");
-    parentElem.appendChild(temp);
+    var test = myQuestion.number;
+    console.log(test);
+    console.log('#template_place' + myQuestion.number);
+
+    const parentElem = document.querySelector("#template_place" + myQuestion.number);
+    parentElem.appendChild(myCopy);
 }

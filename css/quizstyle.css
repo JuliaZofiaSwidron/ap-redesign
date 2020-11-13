@@ -189,6 +189,10 @@ p {
     color: white;
 }
 
+.test {
+    background-color: darkorchid;
+}
+
 /*Slider*/
 
 .slidecontainer {
