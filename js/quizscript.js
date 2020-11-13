@@ -107,8 +107,17 @@ function showQuestion(myQuestion) {
     myCopy.querySelector("p").textContent = myQuestion.blurb;
     myCopy.querySelector("#specificQuestion").textContent = myQuestion.question;
 
-    myCopy.querySelector("#answer1").textContent = myQuestion.answers;
+    if (myQuestion.number < 4) {
+        myCopy.querySelector(".table").classList.remove("display_none");
+        myCopy.querySelector("#answer1").textContent = myQuestion.answers;
+        myCopy.querySelector("#answer2").textContent = myQuestion.answers2;
+        myCopy.querySelector("#answer3").textContent = myQuestion.answers3;
+        myCopy.querySelector("#answer4").textContent = myQuestion.answers4;
+        myCopy.querySelector("#answer5").textContent = myQuestion.answers5;
 
+    } else {
+        myCopy.querySelector(".slidercontainer").classList.remove("display_none");
+    }
 
     var test = myQuestion.number;
     console.log(test);
