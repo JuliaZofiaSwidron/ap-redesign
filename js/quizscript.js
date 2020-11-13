@@ -99,14 +99,16 @@ function dataReceived(question) {
 function showQuestion(myQuestion) {
     console.log("myQuestion")
 
-    const temp = document.querySelector("#templateID");
-    const myCopy = temp.cloneNode(true);
+    var temp = document.querySelector("#templateID");
+    var myCopy = temp.cloneNode(true);
 
     myCopy.querySelector(".number_span").textContent = myQuestion.number;
     myCopy.querySelector("h1").textContent = myQuestion.quiz_title;
     myCopy.querySelector("p").textContent = myQuestion.blurb;
     myCopy.querySelector("#specificQuestion").textContent = myQuestion.question;
+
     myCopy.querySelector("#answer1").textContent = myQuestion.answers;
+
 
     var test = myQuestion.number;
     console.log(test);

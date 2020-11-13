@@ -1,4 +1,4 @@
-#templateID {
+#templateID, #templateID_slider {
     position: relative;
     top: 5vh;
     width: 90%;
@@ -13,6 +13,8 @@
         "image image questions"
         "image image .";
 }
+
+
 
 .solution {
     position: relative;
